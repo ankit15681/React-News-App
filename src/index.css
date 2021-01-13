@@ -1,13 +1,236 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  width:1070px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+a{
+	color:grey;
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:underline dotted ;
+}
+select{
+	color:grey;
+	height:60%;
+	font-size:90%;
+	border-radius:4px;
+}
+select:focus{
+	outline:none;
+}
+/**
+.body
+*/
+
+/**
+App
+*/
+.menuSuperior{
+	 position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+	
+}
+
+
+
+
+
+/* News List*/
+.newsList{
+	margin-top:113px;
+	overflow:none;
+	display:flex;
+	flex-direction: column;
+	
+}
+button:focus{
+	outline:none;
+	
+}
+button:hover{
+	cursor: pointer;
+}
+.ulPages{
+	padding-inline-start:0px;
+	width: 50%;
+	margin:0 auto;
+	display:flex;
+	flex-direction:row;
+	list-style-type: none;
+	justify-content:center;
+}
+.divPages{
+	
+	height: 60px;;
+
+	background-color:#f9f6f6;
+	width:100%;
+
+}
+.liPages{
+	margin:8px;
+}
+button{
+	padding: 5px 11px 5px 11px;
+	color:grey;
+	border:1px solid grey;
+	border-radius: 4px;
+	background-color:#f9f6f6;
+}
+.buttonHighlighted{
+	border-color:#FF742B;
+	color: #FF742B;
+}
+/**
+News Item
+**/
+
+
+
+.newsItem{
+	padding:10px;
+	background-color:#f9f6f6;
+	margin-bottom:1px;
+	margin-top:1px;
+	
+}
+.newsTitle{
+	margin:0px;
+	color:black;
+	font-size:100%;
+	margin-bottom:4px;
+	
+}
+.divSpans{
+	font-size:78%;
+	display:flex;
+	color:grey;
+}
+
+.separador{
+	margin-left:5px;
+	margin-right:5px;
+}
+
+/**
+barraPrincipal
+*/
+
+.searchBarMain{
+	background-color: #FF742B;
+	height:60px;
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	width:1070px;
+}
+.logoSearch{
+	height:50px;
+	width:50px;
+}
+.searchBarTitle{
+	line-height:1;
+	margin-left:15px;
+	color:white;
+	width:120px;
+	font-size:120%;
+	font-weight:500;
+}
+.iconSearch{
+	width:30px;
+	height:30px;
+	position:relative;
+	top:8px;
+	left:8px;
+}
+
+.searchBar{
+	display:flex;
+	align-items:center;
+	
+}
+.searchIcon{
+	color:#ff742b;
+	position:relative;
+	font-size:140%;
+	left:30px;
+}
+.searchBarInput{
+	border-width:0px;
+	padding-left:40px;
+	background-color:white;
+	font-size:100%;
+	float:left;
+	height:40px;
+	width:630px;
+	color:#5c5c5c;
+}
+
+.searchBarInput:focus{
+	outline:none;
+}
+
+
+.searchBarInput::placeholder{
+	color:#ababab;
+}
+.pAfterSearchBar{
+	margin-right:10px;
+	margin-left:-160px;
+}
+.logoAfterSearch{
+	height:50px;
+	width:50px;
+}
+
+/* Filters */
+.filtersRight{
+	width:40%;
+	display:flex;
+	align-items:center;
+	justify-content:space-around;
+	
+}
+.filtersLeft{
+	width:60%;
+	display:flex;
+	flex-direction:row;
+	align-items:baseline;
+	align-content:center;
+	justify-content:left;
+}
+.filters{
+	display:flex;
+	flex-direction:row;
+	font-size:100%;
+	background-color:#fdfdfd;
+	
+}
+.pFilters{
+	margin-left:10px;
+	margin-right:10px;
+}
+.pFiltersResults{
+	
+}
+.newxx{
+	
+}
+
+.ak1 {
+	background-color:white;
+	height:40px;
+	width:90px;
+	color:#5c5c5c;
 }
